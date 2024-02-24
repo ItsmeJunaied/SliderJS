@@ -1,0 +1,107 @@
+
+ul li {
+    text-decoration: none;
+}
+
+.contact-bg {
+    background-color: #1D4645;
+}
+
+.home-text{
+    color: #1D4645;
+}
+
+.logo{
+    width: 200px;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.dark-overlay {
+    position: relative;
+}
+
+.dark-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); 
+}
+
+.bg-primaryy{
+    background-color: #C3A161;
+    opacity: 70%;
+}
+
+.imageDarker {
+    position: relative;
+}
+
+.imageDarker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2A2A;
+    opacity: 50%;
+}
+
+.discoverMe{
+    background-color: #C3A161;
+}
+
+
+.heroImg {
+    border-radius: 50%;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    margin-right: 35px;
+  
+    animation: rotate 5s linear infinite; 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 900; 
+    font-size: 70px; 
+    font-style: normal;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; 
+}
