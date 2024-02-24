@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* Custom styling for slider */
         .carousel-inner img {
@@ -26,34 +27,41 @@
 
     <div class="">
         <!-- navbar -->
-        <div class="navbar-wrapper">
-
+        <div class="navbar-wrapper d-none d-lg-block">
             <!-- hero image -->
-            <div class=" rounded-container">
+            <div class="rounded-container">
                 <img class="heroImg"
                     src="https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2022/12/hero-shape-5.2.png"
                     alt="">
             </div>
 
             <!-- navbar -->
-            <div id="navbar" class="navbar bg-transparent d-flex flex-row justify-content-between align-items-center h-25 p-4 ">
-                <img class="logo" src="https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2022/12/briddge-green-logo-2.png" alt="">
+            <div id="navbar"
+                class="navbar bg-transparent d-flex flex-row justify-content-between align-items-center h-25 p-4">
+                <img class="logo"
+                    src="https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2022/12/briddge-green-logo-2.png"
+                    alt="">
                 <div>
                     <ul class="d-flex flex-row justify-content-between list-unstyled">
-                        <li class="mr-3 font-weight-bold home-text">Home <i class="fas fa-chevron-down" style="color: #1D4645;"></i></li>
-                        <li class="mr-3 font-weight-bold text-white">About Us <i class="fas fa-chevron-down" style="color: #ffffff;"></i></li>
-                        <li class="mr-3 font-weight-bold text-white">Our Services <i class="fas fa-chevron-down" style="color: #ffffff;"></i></li>
-                        <li class="mr-3 font-weight-bold text-white">Blogs <i class="fas fa-chevron-down" style="color: #ffffff;"></i></li>
-                        <li class="font-weight-bold text-white">Contact Us <i class="fas fa-chevron-down" style="color: #ffffff;"></i></li>
+                        <li class="mr-3 font-weight-bold home-text">Home <i class="fas fa-chevron-down"
+                                style="color: #1D4645;"></i></li>
+                        <li class="mr-3 font-weight-bold text-white">About Us <i class="fas fa-chevron-down"
+                                style="color: #ffffff;"></i></li>
+                        <li class="mr-3 font-weight-bold text-white">Our Services <i class="fas fa-chevron-down"
+                                style="color: #ffffff;"></i></li>
+                        <li class="mr-3 font-weight-bold text-white">Blogs <i class="fas fa-chevron-down"
+                                style="color: #ffffff;"></i></li>
+                        <li class="font-weight-bold text-white">Contact Us <i class="fas fa-chevron-down"
+                                style="color: #ffffff;"></i></li>
                     </ul>
                 </div>
                 <div>
                     <button class="text-white px-4 py-3 contact-bg btn border-0">Contact Us</button>
                 </div>
             </div>
-
-
         </div>
+
+
 
         <!-- banner -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -67,15 +75,19 @@
                     <div class="carousel-caption d-flex flex-row justify-content-center align-items-center h-100">
                         <div class=" w-50">
 
-                            <h1 class="text-white   text-left merriweather-bold ">We Solve Your Complex Problem
+                            <h1 class="text-white   text-left merriweather-bold animate-left-to-right"
+                                data-aos="fade-right" id="captionText">We Solve Your
+                                Complex Problem
                             </h1>
-                            <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                            <p class="text-left" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Alias,
                                 pariatur
                                 recusandae ut quae
                                 unde
                                 esse nemo consequatur sint, harum nisi placeat repudiandae nesciunt maxime!</p>
 
-                            <div class="d-flex justify-content-start ">
+                            <div class="d-flex justify-content-start " data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
                                 <button class="btn border-0 discoverMe text-white font-weight-normal px-4 py-3">Discover
                                     more</button>
                             </div>
@@ -100,16 +112,20 @@
 
                     <div class="carousel-caption d-flex flex-row justify-content-center align-items-center h-100">
                         <div class=" w-50">
-                            <h1 class="text-white   text-left merriweather-bold animated-text">We Solve Your Complex
+                            <h1 class="text-white   text-left merriweather-bold animated-text animate-left-to-right"
+                                data-aos="fade-right" id="captionText">We
+                                Solve Your Complex
                                 Problem
                             </h1>
-                            <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                            <p class="text-left" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem ipsum,
+                                dolor sit amet consectetur adipisicing elit. Alias,
                                 pariatur
                                 recusandae ut quae
                                 unde
                                 esse nemo consequatur sint, harum nisi placeat repudiandae nesciunt maxime!</p>
 
-                            <div class="d-flex justify-content-start">
+                            <div class="d-flex justify-content-start" data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
                                 <button class="btn border-0 discoverMe text-white font-weight-normal px-4 py-3">Discover
                                     more</button>
                             </div>
@@ -148,38 +164,71 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Auto slide every 2 seconds
         $('.carousel').carousel({
-            interval: 2000
+            interval: 4000
         });
 
         function prevSlide() {
             $('#carouselExampleIndicators').carousel('prev');
+            animateHeading();
         }
 
         function nextSlide() {
             $('#carouselExampleIndicators').carousel('next');
+            animateHeading();
         }
 
-        $(document).ready(function() {
-        var navbar = $('#navbar');
-        var navbarHeight = navbar.outerHeight();
-        var scroll = $(window).scrollTop();
-
-        $(window).scroll(function() {
-            var scrolled = $(window).scrollTop();
-            if (scrolled > scroll) {
-                navbar.addClass('fixed-top');
-            } else {
-                navbar.removeClass('fixed-top');
+        function animateHeading() {
+            var heading = document.querySelector('.animate-left-to-right');
+            if (heading) {
+                heading.classList.remove('animate-left-to-right');
+                void heading.offsetWidth; // Trigger reflow to restart the animation
+                heading.classList.add('animate-left-to-right');
             }
-            scroll = $(window).scrollTop();
+        }
+
+
+        $(document).ready(function () {
+            var navbar = $('#navbar');
+            var navbarHeight = navbar.outerHeight();
+            var scroll = $(window).scrollTop();
+
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > scroll) {
+                    navbar.addClass('fixed-top');
+                } else {
+                    navbar.removeClass('fixed-top');
+                }
+                scroll = $(window).scrollTop();
+            });
+
+            AOS.init();
         });
-    });
+
+        $(document).ready(function () {
+            var navbar = $('#navbar');
+            var navbarHeight = navbar.outerHeight();
+            var scroll = $(window).scrollTop();
+
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > scroll) {
+                    navbar.addClass('fixed-top');
+                } else {
+                    navbar.removeClass('fixed-top');
+                }
+                scroll = $(window).scrollTop();
+            });
+        });
 
     </script>
-
+    <!-- <script>
+        AOS.init();
+    </script> -->
 </body>
 
 </html>
